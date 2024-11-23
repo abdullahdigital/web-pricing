@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { FaFileInvoice } from "react-icons/fa";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   // Features with their prices
@@ -219,6 +220,7 @@ doc.text(
       </main>
 
       <Footer />
+      <Analytics />
       
     </div>
   );
